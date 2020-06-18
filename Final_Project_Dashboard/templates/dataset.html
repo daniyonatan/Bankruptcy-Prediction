@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class = "dataframe">
+    <center>
+        <h1>Bankruptcy Dataset</h1>
+        {% for table in tables %}
+                {{ table|safe }}
+        {% endfor %}
+    </center>
+</div>
+{% endblock %}
