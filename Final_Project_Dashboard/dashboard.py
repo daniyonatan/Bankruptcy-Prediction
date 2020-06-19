@@ -47,10 +47,6 @@ def make_graph():
 def home():
     return render_template('home.html')
 
-@app.route('/about/')
-def about():
-    return render_template('about.html')
-
 @app.route('/dataset/', methods = ('POST','GET'))
 def dataset():
     return render_template('dataset.html', tables = [df.to_html(
