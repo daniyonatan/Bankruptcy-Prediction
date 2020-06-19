@@ -1,7 +1,32 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class = "home">
-    <h1>Selamat Datang di Dashboard Saya</h1>
-    <p>This website predicts admission success</p>
-</div>
+    <div class='container-fluid'>
+        <center><br>
+            <h2 class='display-4'>
+                <font color='Gray'>
+                    <strong>Dashboard For </strong>
+                </font><span class='badge badge-secondary'>Bankruptcy Predictions</span>
+            </h2><br><br>
+
+            <!-- About -->
+            <form method='POST' action='http://127.0.0.1:5000/about/'>
+                    <button style='border-radius: 15px;height: 45px;width: 200px;font-size: 20px;text-align: center;line-height: 20px;background-color: khaki;opacity: .8;;padding: 10px;color: black;'type="button" class='btn btn-info'>
+                        <strong>
+                             About 
+                        </strong>
+                    </button>
+            </form><br><br>
+
+            <!-- Dataset -->
+            <form method='POST' action='http://127.0.0.1:5000/dataset/'>
+                <button style='border-radius: 15px;height:45px;width:200px;font-size:20px;text-align:center;line-height:20px;background-color: khaki;opacity: .8;;padding: 10px;color:black;'type="button" class='btn btn-info'><strong> Dataset </strong></button>
+            </form><br><br>
+
+            <!-- Visualization -->
+            <form method='POST' action='http://127.0.0.1:5000/viz/'>
+                <button style='border-radius: 15px;height:45px;width:200px;font-size:20px;text-align:center;line-height:20px;background-color: khaki;opacity: .8;;padding: 10px;color:black;'type="button" class='btn btn-info'><strong> Visualization </strong></button>
+            </form><br><br>
+        </center>
+    </div>
+
 {% endblock %}

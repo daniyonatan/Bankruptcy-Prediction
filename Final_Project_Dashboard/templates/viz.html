@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class='viz'>
+    <h1><center> Bankruptcy Dataset Visualization </center></h1>
+    <hr>
+    <div class='graph'>
+        <center>
+            {% for graph_name in graph_names %}
+            <img src= "{{url_for('send_image',filename=graph_name)}}">
+            {% endfor %}
+        </center>
+    </div>
+</div>
+{% endblock %}

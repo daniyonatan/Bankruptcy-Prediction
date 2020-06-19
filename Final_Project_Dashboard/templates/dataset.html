@@ -1,11 +1,17 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class = "dataframe">
-    <center>
-        <h1>Bankruptcy Dataset</h1>
-        {% for table in tables %}
-                {{ table|safe }}
-        {% endfor %}
-    </center>
+<div class = 'header'>
+        <center>
+                <h2 class='display-4'>
+                        <font color='Gray'>
+                            <strong>Bankruptcy </strong>
+                        </font><span class='badge badge-secondary'>Dataset</span>
+                    </h2><hr><br>
+        <div class = "dataset" style= "overflow-x:auto;overflow-y: auto;">
+                {% for table in tables %}
+                        {{ table|safe }}
+                {% endfor %}
+        </center>
+</div>
 </div>
 {% endblock %}
