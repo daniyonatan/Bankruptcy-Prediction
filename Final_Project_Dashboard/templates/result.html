@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class = 'header'>
+    <center>
+            <h2 class='display-4'>
+                    <font color='Gray'>
+                        <strong>Prediction </strong>
+                    </font><span class='badge badge-secondary'>Result</span>
+                </h2><hr><br>
+    </center>
+    <div class = 'child'>
+        <P>Cash = {{data ['Cash']}}</P>
+        <P>Short Term Securities = {{data ['Securities']}}</P>
+        <P>Receivables = {{data ['Receivables']}}</P>
+        <P>Inventory = {{data ['Inventory']}}</P>
+        <P>Current Assets = {{data ['Current_As']}}</P>
+        <P>Total Assets = {{data ['Total_As']}}</P>
+        <P>Short Term Liabilities = {{data ['Short_Lib']}}</P>
+        <P>Total Liabilities = {{data ['Total_Lib']}}</P>
+        <P>Constant Capital = {{data ['Constant_Cap']}}</P>
+        <P>Current Sales = {{data ['Current_Sales']}}</P>
+        <P>1 Year Prior Sales = {{data ['Prior_Sales']}}</P>
+        <P>Cost of Product Sold = {{data ['COGS']}}</P>
+        <P>Profit on Sales = {{data ['POS']}}</P>
+        <P>Gross Profit in 3 Years = {{data ['GP3']}}</P>
+        <P>Depreciation = {{data ['Depreciation']}}</P>
+        <P>Operating Expenses = {{data ['Op_Ex']}}</P>
+        <P>Profit on Operating Activities = {{data ['POA']}}</P>
+        <P>Financial Expenses = {{data ['Fin_Ex']}}</P>
+        <P>Total Cost = {{data ['Total_Cost']}}</P>
+        <P>Net Profit = {{data ['Net_Profit']}}</P>
+        <P>Retained Earning = {{data ['Ret_Earn']}}</P>
+        <p>Prediction = {{ pred }}</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class='header'>
+    <center>
+            <h2 class='display-4'>
+                    <font color='Gray'>
+                        <strong>Bankruptcy </strong>
+                    </font><span class='badge badge-secondary'>Predictions</span>
+                </h2><hr><br>
+    </center>
+    <div class = 'child'>
+    <form method = 'POST' action='http://127.0.0.1:5000/result'>
+            Cash:
+            <input type = 'number' name = 'Cash' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Short Term Securities:
+            <input type = 'number' name = 'Securities' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Receivables:
+            <input type = 'number' name = 'Receivables' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Inventory:
+            <input type = 'number' name = 'Inventory' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Current Assets:
+            <input type = 'number' name = 'Current_As' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Total Assets:
+            <input type = 'number' name = 'Total_As' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Short Term Liabilities:
+            <input type = 'number' name = 'Short_Lib' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Total Liabilities:
+            <input type = 'number' name = 'Total_Lib' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Constant Capital:
+            <input type = 'number' name = 'Constant_Cap' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Current Sales:
+            <input type = 'number' name = 'Current_Sales' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            1 Year Prior Sales:
+            <input type = 'number' name = 'Prior_Sales' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Cost of Product Sold:
+            <input type = 'number' name = 'COGS' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Profit on Sales:
+            <input type = 'number' name = 'POS' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Gross Profit in 3 Years:
+            <input type = 'number' name = 'GP3' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Depreciation:
+            <input type = 'number' name = 'Depreciation' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Operating Expenses:
+            <input type = 'number' name = 'Op_Ex' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Profit on Operating Activities:
+            <input type = 'number' name = 'POA' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Financial Expenses:
+            <input type = 'number' name = 'Fin_Ex' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Total Cost:
+            <input type = 'number' name = 'Total_Cost' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Net Profit:
+            <input type = 'number' name = 'Net_Profit' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            Retained Earning:
+            <input type = 'number' name = 'Ret_Earn' step = '0.01' min = '0' placeholder = 'Input Here'/>
+            <br><br>
+            <input type='submit' value='Submit'><br><br>
+    </form>
+</div>
+</div>
+{% endblock %}

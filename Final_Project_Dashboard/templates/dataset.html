@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class = 'header'>
+        <center>
+                <h2 class='display-4'>
+                        <font color='Gray'>
+                            <strong>Bankruptcy </strong>
+                        </font><span class='badge badge-secondary'>Dataset</span>
+                    </h2><hr><br>
+        <div class = "child" style= "overflow-x:auto;overflow-y: auto;">
+                {% for table in tables %}
+                        {{ table|safe }}
+                {% endfor %}
+        </center>
+</div>
+</div>
+{% endblock %}
